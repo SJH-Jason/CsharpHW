@@ -24,6 +24,7 @@ namespace CsharpHomework
 
         private void btnColor_Click(object sender, EventArgs e)
         {
+           
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 myPen.Color = colorDialog1.Color;
