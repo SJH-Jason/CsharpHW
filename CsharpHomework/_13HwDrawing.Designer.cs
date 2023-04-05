@@ -162,6 +162,7 @@
             this.Controls.Add(this.btnColor);
             this.Controls.Add(this.ptbwhite);
             this.Controls.Add(this.menuStrip1);
+            this.Cursor = System.Windows.Forms.Cursors.Cross;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "_13HwDrawing";
             this.Text = "_13HwDrawing";

@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 //原作業內容 加上cmb struct 跟enum的應用練習
-namespace Lab_Form
+namespace  CsharpHomework
 {
     public partial class _01HwHelloForm : Form
     {

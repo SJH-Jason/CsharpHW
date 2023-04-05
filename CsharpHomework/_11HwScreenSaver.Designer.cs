@@ -1,6 +1,6 @@
 ﻿namespace CsharpHomework
 {
-    partial class _11ScreenSaver
+    partial class _11HwScreenSaver
     {
         /// <summary>
         /// Required designer variable.

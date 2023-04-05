@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Lab_Form
+namespace  CsharpHomework
 {
     partial class _01HwHelloForm
     {

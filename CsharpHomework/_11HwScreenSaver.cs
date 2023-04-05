@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace CsharpHomework
 {
-    public partial class _11ScreenSaver : Form
+    public partial class _11HwScreenSaver : Form
     {
 
-        public _11ScreenSaver()
+        public _11HwScreenSaver()
         {
             InitializeComponent();
         }
