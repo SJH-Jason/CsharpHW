@@ -1,6 +1,6 @@
 ﻿namespace CsharpHomework
 {
-    partial class _08Hwcalculateform
+    partial class _08Hwcalculate
     {
         /// <summary>
         /// Required designer variable.
@@ -28,150 +28,151 @@
         /// </summary>
         private void InitializeComponent()
         {
-            labnum1 = new Label();
-            labnum2 = new Label();
-            labsymbol = new Label();
-            labanswer = new Label();
-            txtnum1 = new TextBox();
-            txtnum2 = new TextBox();
-            txtans = new TextBox();
-            btnadd = new Button();
-            btnmultiplication = new Button();
-            btnsubtraction = new Button();
-            btndivision = new Button();
-            SuspendLayout();
+            this.labnum1 = new System.Windows.Forms.Label();
+            this.labnum2 = new System.Windows.Forms.Label();
+            this.labsymbol = new System.Windows.Forms.Label();
+            this.labanswer = new System.Windows.Forms.Label();
+            this.txtnum1 = new System.Windows.Forms.TextBox();
+            this.txtnum2 = new System.Windows.Forms.TextBox();
+            this.txtans = new System.Windows.Forms.TextBox();
+            this.btnadd = new System.Windows.Forms.Button();
+            this.btnmultiplication = new System.Windows.Forms.Button();
+            this.btnsubtraction = new System.Windows.Forms.Button();
+            this.btndivision = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // labnum1
             // 
-            labnum1.AutoSize = true;
-            labnum1.Location = new Point(62, 82);
-            labnum1.Margin = new Padding(4, 0, 4, 0);
-            labnum1.Name = "labnum1";
-            labnum1.Size = new Size(39, 15);
-            labnum1.TabIndex = 0;
-            labnum1.Text = "num1";
+            this.labnum1.AutoSize = true;
+            this.labnum1.Location = new System.Drawing.Point(62, 82);
+            this.labnum1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labnum1.Name = "labnum1";
+            this.labnum1.Size = new System.Drawing.Size(39, 15);
+            this.labnum1.TabIndex = 0;
+            this.labnum1.Text = "num1";
             // 
             // labnum2
             // 
-            labnum2.AutoSize = true;
-            labnum2.Location = new Point(62, 134);
-            labnum2.Margin = new Padding(4, 0, 4, 0);
-            labnum2.Name = "labnum2";
-            labnum2.Size = new Size(39, 15);
-            labnum2.TabIndex = 1;
-            labnum2.Text = "num2";
+            this.labnum2.AutoSize = true;
+            this.labnum2.Location = new System.Drawing.Point(62, 134);
+            this.labnum2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labnum2.Name = "labnum2";
+            this.labnum2.Size = new System.Drawing.Size(39, 15);
+            this.labnum2.TabIndex = 1;
+            this.labnum2.Text = "num2";
             // 
             // labsymbol
             // 
-            labsymbol.AutoSize = true;
-            labsymbol.Location = new Point(62, 184);
-            labsymbol.Margin = new Padding(4, 0, 4, 0);
-            labsymbol.Name = "labsymbol";
-            labsymbol.Size = new Size(244, 15);
-            labsymbol.TabIndex = 2;
-            labsymbol.Text = "= = = = = = = = = = = = = = = = = = = =";
+            this.labsymbol.AutoSize = true;
+            this.labsymbol.Location = new System.Drawing.Point(62, 184);
+            this.labsymbol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labsymbol.Name = "labsymbol";
+            this.labsymbol.Size = new System.Drawing.Size(244, 15);
+            this.labsymbol.TabIndex = 2;
+            this.labsymbol.Text = "= = = = = = = = = = = = = = = = = = = =";
             // 
             // labanswer
             // 
-            labanswer.AutoSize = true;
-            labanswer.Location = new Point(62, 231);
-            labanswer.Margin = new Padding(4, 0, 4, 0);
-            labanswer.Name = "labanswer";
-            labanswer.Size = new Size(46, 15);
-            labanswer.TabIndex = 3;
-            labanswer.Text = "answer";
+            this.labanswer.AutoSize = true;
+            this.labanswer.Location = new System.Drawing.Point(62, 231);
+            this.labanswer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labanswer.Name = "labanswer";
+            this.labanswer.Size = new System.Drawing.Size(46, 15);
+            this.labanswer.TabIndex = 3;
+            this.labanswer.Text = "answer";
             // 
             // txtnum1
             // 
-            txtnum1.Location = new Point(166, 79);
-            txtnum1.Margin = new Padding(4);
-            txtnum1.Name = "txtnum1";
-            txtnum1.Size = new Size(78, 23);
-            txtnum1.TabIndex = 4;
+            this.txtnum1.Location = new System.Drawing.Point(166, 79);
+            this.txtnum1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtnum1.Name = "txtnum1";
+            this.txtnum1.Size = new System.Drawing.Size(78, 23);
+            this.txtnum1.TabIndex = 4;
             // 
             // txtnum2
             // 
-            txtnum2.Location = new Point(166, 130);
-            txtnum2.Margin = new Padding(4);
-            txtnum2.Name = "txtnum2";
-            txtnum2.Size = new Size(78, 23);
-            txtnum2.TabIndex = 5;
+            this.txtnum2.Location = new System.Drawing.Point(166, 130);
+            this.txtnum2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtnum2.Name = "txtnum2";
+            this.txtnum2.Size = new System.Drawing.Size(78, 23);
+            this.txtnum2.TabIndex = 5;
             // 
             // txtans
             // 
-            txtans.Enabled = false;
-            txtans.Location = new Point(166, 228);
-            txtans.Margin = new Padding(4);
-            txtans.Name = "txtans";
-            txtans.ReadOnly = true;
-            txtans.Size = new Size(78, 23);
-            txtans.TabIndex = 6;
+            this.txtans.Enabled = false;
+            this.txtans.Location = new System.Drawing.Point(166, 231);
+            this.txtans.Margin = new System.Windows.Forms.Padding(4);
+            this.txtans.Name = "txtans";
+            this.txtans.ReadOnly = true;
+            this.txtans.Size = new System.Drawing.Size(78, 23);
+            this.txtans.TabIndex = 6;
             // 
             // btnadd
             // 
-            btnadd.Location = new Point(314, 60);
-            btnadd.Margin = new Padding(4);
-            btnadd.Name = "btnadd";
-            btnadd.Size = new Size(46, 46);
-            btnadd.TabIndex = 7;
-            btnadd.Text = "+";
-            btnadd.UseVisualStyleBackColor = true;
-            btnadd.Click += btnadd_Click;
+            this.btnadd.Location = new System.Drawing.Point(314, 60);
+            this.btnadd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(46, 46);
+            this.btnadd.TabIndex = 7;
+            this.btnadd.Text = "+";
+            this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click_1);
             // 
             // btnmultiplication
             // 
-            btnmultiplication.Location = new Point(314, 200);
-            btnmultiplication.Margin = new Padding(4);
-            btnmultiplication.Name = "btnmultiplication";
-            btnmultiplication.Size = new Size(46, 46);
-            btnmultiplication.TabIndex = 8;
-            btnmultiplication.Text = "*";
-            btnmultiplication.UseVisualStyleBackColor = true;
-            btnmultiplication.Click += btnmultiplication_Click;
+            this.btnmultiplication.Location = new System.Drawing.Point(314, 200);
+            this.btnmultiplication.Margin = new System.Windows.Forms.Padding(4);
+            this.btnmultiplication.Name = "btnmultiplication";
+            this.btnmultiplication.Size = new System.Drawing.Size(46, 46);
+            this.btnmultiplication.TabIndex = 8;
+            this.btnmultiplication.Text = "*";
+            this.btnmultiplication.UseVisualStyleBackColor = true;
+            this.btnmultiplication.Click += new System.EventHandler(this.btnmultiplication_Click_1);
             // 
             // btnsubtraction
             // 
-            btnsubtraction.Location = new Point(314, 130);
-            btnsubtraction.Margin = new Padding(4);
-            btnsubtraction.Name = "btnsubtraction";
-            btnsubtraction.Size = new Size(46, 46);
-            btnsubtraction.TabIndex = 9;
-            btnsubtraction.Text = "-";
-            btnsubtraction.UseVisualStyleBackColor = true;
-            btnsubtraction.Click += btnsubtraction_Click;
+            this.btnsubtraction.Location = new System.Drawing.Point(314, 130);
+            this.btnsubtraction.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsubtraction.Name = "btnsubtraction";
+            this.btnsubtraction.Size = new System.Drawing.Size(46, 46);
+            this.btnsubtraction.TabIndex = 9;
+            this.btnsubtraction.Text = "-";
+            this.btnsubtraction.UseVisualStyleBackColor = true;
+            this.btnsubtraction.Click += new System.EventHandler(this.btnsubtraction_Click_1);
             // 
             // btndivision
             // 
-            btndivision.Location = new Point(314, 270);
-            btndivision.Margin = new Padding(4);
-            btndivision.Name = "btndivision";
-            btndivision.Size = new Size(46, 46);
-            btndivision.TabIndex = 10;
-            btndivision.Text = "/";
-            btndivision.UseVisualStyleBackColor = true;
-            btndivision.Click += btndivision_Click;
+            this.btndivision.Location = new System.Drawing.Point(314, 270);
+            this.btndivision.Margin = new System.Windows.Forms.Padding(4);
+            this.btndivision.Name = "btndivision";
+            this.btndivision.Size = new System.Drawing.Size(46, 46);
+            this.btndivision.TabIndex = 10;
+            this.btndivision.Text = "/";
+            this.btndivision.UseVisualStyleBackColor = true;
+            this.btndivision.Click += new System.EventHandler(this.btndivision_Click_1);
             // 
-            // _08Hwcalculateform
+            // _08Hwcalculate
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(427, 348);
-            Controls.Add(btndivision);
-            Controls.Add(btnsubtraction);
-            Controls.Add(btnmultiplication);
-            Controls.Add(btnadd);
-            Controls.Add(txtans);
-            Controls.Add(txtnum2);
-            Controls.Add(txtnum1);
-            Controls.Add(labanswer);
-            Controls.Add(labsymbol);
-            Controls.Add(labnum2);
-            Controls.Add(labnum1);
-            Margin = new Padding(4);
-            Name = "_08Hwcalculateform";
-            Text = "calculate";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(427, 348);
+            this.Controls.Add(this.btndivision);
+            this.Controls.Add(this.btnsubtraction);
+            this.Controls.Add(this.btnmultiplication);
+            this.Controls.Add(this.btnadd);
+            this.Controls.Add(this.txtans);
+            this.Controls.Add(this.txtnum2);
+            this.Controls.Add(this.txtnum1);
+            this.Controls.Add(this.labanswer);
+            this.Controls.Add(this.labsymbol);
+            this.Controls.Add(this.labnum2);
+            this.Controls.Add(this.labnum1);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "_08Hwcalculate";
+            this.Text = "calculate";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

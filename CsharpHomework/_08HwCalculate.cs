@@ -9,51 +9,74 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CsharpHomework
 {
-    public partial class _08Hwcalculateform : Form
+    public partial class _08Hwcalculate : Form
     {
-        public _08Hwcalculateform()
+        public _08Hwcalculate()
         {
             InitializeComponent();
         }
-
-        public void Nums()
+     
+        private void btnadd_Click_1(object sender, EventArgs e)
         {
-            int n1 = Convert.ToInt32(txtnum1.Text);
-            int n2 = Convert.ToInt32(txtnum2.Text);
+            double ans;
+            if (double.TryParse(txtnum1.Text, out double n1) && double.TryParse(txtnum2.Text, out double n2))
+            {
+                ans = n1 + n2;
+                txtans.Text = ans.ToString();
+            }
+            else
+            {
+                MessageBox.Show("請輸入數字!");
+            }
         }
 
-        private void btnadd_Click(object sender, EventArgs e)
+        private void btnsubtraction_Click_1(object sender, EventArgs e)
         {
-            int n1 = Convert.ToInt32(txtnum1.Text);
-            int n2 = Convert.ToInt32(txtnum2.Text);
-            int ans = n1 + n2;
-            txtans.Text = ans.ToString();
+            if (double.TryParse(txtnum1.Text, out double n1) && double.TryParse(txtnum2.Text, out double n2))
+            {
+                double ans = n1 - n2;
+                txtans.Text = ans.ToString();
+            }
+            else
+            {
+                MessageBox.Show("請輸入數字!");
+            }
         }
 
-        private void btnsubtraction_Click(object sender, EventArgs e)
+        private void btnmultiplication_Click_1(object sender, EventArgs e)
         {
-            int n1 = Convert.ToInt32(txtnum1.Text);
-            int n2 = Convert.ToInt32(txtnum2.Text);
-            int ans = n1 - n2;
-            txtans.Text = ans.ToString();
+            if (double.TryParse(txtnum1.Text, out double n1) && double.TryParse(txtnum2.Text, out double n2))
+            {
+                double ans = n1 * n2;
+                txtans.Text = ans.ToString();
+            }
+            else
+            {
+                MessageBox.Show("請輸入數字!");
+            }
         }
 
-        private void btnmultiplication_Click(object sender, EventArgs e)
+        private void btndivision_Click_1(object sender, EventArgs e)
         {
-            int n1 = Convert.ToInt32(txtnum1.Text);
-            int n2 = Convert.ToInt32(txtnum2.Text);
-            int ans = n1 * n2;
-            txtans.Text = ans.ToString();
-        }
-
-        private void btndivision_Click(object sender, EventArgs e)
-        {
-            int n1 = Convert.ToInt32(txtnum1.Text);
-            int n2 = Convert.ToInt32(txtnum2.Text);
-            int ans = n1 / n2;
-            txtans.Text = ans.ToString();
+            if (double.TryParse(txtnum1.Text, out double n1) && double.TryParse(txtnum2.Text, out double n2))
+            {
+                if (n2 != 0)
+                {
+                    double ans = n1 / n2;
+                    txtans.Text = ans.ToString("G5");
+                }
+                else
+                {
+                    MessageBox.Show("除數不能為0!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("請輸入數字!");
+            }
         }
     }
 }

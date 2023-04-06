@@ -92,11 +92,11 @@
             this.labAns.AutoSize = true;
             this.labAns.BackColor = System.Drawing.Color.OldLace;
             this.labAns.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labAns.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labAns.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labAns.Location = new System.Drawing.Point(744, 188);
             this.labAns.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labAns.Name = "labAns";
-            this.labAns.Size = new System.Drawing.Size(41, 22);
+            this.labAns.Size = new System.Drawing.Size(34, 18);
             this.labAns.TabIndex = 3;
             this.labAns.Text = "Ans";
             this.labAns.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

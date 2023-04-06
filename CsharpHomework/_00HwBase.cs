@@ -77,7 +77,7 @@ namespace CsharpHomework
         private void btn08_Click(object sender, EventArgs e)
         {
             splitContainer2.Panel2.Controls.Clear();
-            _08Hwcalculateform Hw08 = new _08Hwcalculateform();
+            _08Hwcalculate Hw08= new _08Hwcalculate();
             Hw08.TopLevel = false;
             Hw08.Dock = DockStyle.None;
             splitContainer2.Panel2.Controls.Add(Hw08);
