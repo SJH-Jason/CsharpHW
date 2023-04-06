@@ -30,7 +30,7 @@ namespace CsharpHomework
         public event GuessResultEventHandler GuessResultEvent;
         private void btnE_Click(object sender, EventArgs e)
         {
-          
+
             //if (int.TryParse(txtNum.Text, out txtans))
             //{
             //    if (txtans > 0 && txtans <= 100)
@@ -81,64 +81,66 @@ namespace CsharpHomework
             //        return;
             //    }
             //}
-            if (int.TryParse(txtNum.Text, out txtans))
+            if (!int.TryParse(txtNum.Text, out txtans))
             {
-                if (txtans > 0 && txtans <= 100)
+                MessageBox.Show("請輸入0~100數字!");
+                return;
+            }
+            else if (txtans > 0 && txtans <= 100)
+            {
+                if (txtans == ansX)
                 {
-                    if (txtans == ansX)
+                    MessageBox.Show($"恭喜答對，幸運數字為{ansX}遊戲結束!");
+                    Random RR = new Random();
+                    ansX = RR.Next(1, 101);
+                    return;
+                }
+                else if (txtans > ansX)
+                {
+                    if (txtans < Max)
                     {
-                        MessageBox.Show($"恭喜答對，幸運數字為{ansX}遊戲結束!");
-                        Random RR= new Random();
-                        ansX=RR.Next(1,101);
-                        return;
-                    }
-                    else if (txtans > ansX)
-                    {
-                        if (txtans < Max)
-                        {
-                            BackG1= $"猜大了，請猜{min}到{txtans}";
-                            Max = txtans;
-                        
-                        }
-                        else
-                        {
-                            BackG1 = $"超出猜測範圍，請猜{min}到{Max}";
-                            error++;
-                            Method();
-                    
-                        }
-                    }
-                    else if (txtans < ansX)
-                    {
-                        if (txtans > min)
-                        {
-                            BackG1 = $"猜小了，請猜{txtans}到{Max}";
-                            min = txtans;
-                    
-                        }
-                        else
-                        {
-                            BackG1 = $"超出猜測範圍，請猜{min}到{Max}";
-                            error++;
-                            Method();
-                    
-                        }
+                        BackG1 = $"猜大了，請猜{min}到{txtans}";
+                        Max = txtans;
+
                     }
                     else
                     {
-                        BackG1=$"請輸入1~100數字";
+                        BackG1 = $"超出猜測範圍，請猜{min}到{Max}";
                         error++;
-                        return;
+                        Method();
+
+                    }
+                }
+                else if (txtans < ansX)
+                {
+                    if (txtans > min)
+                    {
+                        BackG1 = $"猜小了，請猜{txtans}到{Max}";
+                        min = txtans;
+
+                    }
+                    else
+                    {
+                        BackG1 = $"超出猜測範圍，請猜{min}到{Max}";
+                        error++;
+                        Method();
+
                     }
                 }
                 else
                 {
-                    BackG1=$"請輸入數字";
+                    BackG1 = $"請輸入1~100數字";
                     error++;
                     return;
                 }
             }
+            else
+            {
+                MessageBox.Show("請輸入0~100數字!");
+                return;
+            }
             GuessResultEvent?.Invoke(BackG1);
+
         }
 
         private void btnC_Click(object sender, EventArgs e)

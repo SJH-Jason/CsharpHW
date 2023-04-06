@@ -1,4 +1,4 @@
-﻿namespace  CsharpHomework
+﻿namespace CsharpHomework
 {
     partial class _02Hwrepaymentform
     {
@@ -29,168 +29,180 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_02Hwrepaymentform));
-            this.monthpay = new System.Windows.Forms.Button();
-            this.totalpay = new System.Windows.Forms.Button();
-            this.showinf = new System.Windows.Forms.Button();
-            this.Loanamount = new System.Windows.Forms.Label();
-            this.Year = new System.Windows.Forms.Label();
-            this.interestrate = new System.Windows.Forms.Label();
-            this.downpayment = new System.Windows.Forms.Label();
-            this.LoanamountBox = new System.Windows.Forms.TextBox();
-            this.YearBox = new System.Windows.Forms.TextBox();
-            this.interestrateBox = new System.Windows.Forms.TextBox();
-            this.downpaymentBox = new System.Windows.Forms.TextBox();
-            this.labmonth = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            monthpay = new Button();
+            totalpay = new Button();
+            showinf = new Button();
+            Loanamount = new Label();
+            Year = new Label();
+            interestrate = new Label();
+            downpayment = new Label();
+            LoanamountBox = new TextBox();
+            YearBox = new TextBox();
+            interestrateBox = new TextBox();
+            downpaymentBox = new TextBox();
+            labmonth = new Label();
+            SuspendLayout();
             // 
             // monthpay
             // 
-            this.monthpay.Location = new System.Drawing.Point(124, 307);
-            this.monthpay.Name = "monthpay";
-            this.monthpay.Size = new System.Drawing.Size(87, 49);
-            this.monthpay.TabIndex = 0;
-            this.monthpay.Text = "月繳";
-            this.monthpay.UseVisualStyleBackColor = true;
-            this.monthpay.Click += new System.EventHandler(this.monthpay_Click);
+            monthpay.Location = new Point(145, 384);
+            monthpay.Margin = new Padding(4, 4, 4, 4);
+            monthpay.Name = "monthpay";
+            monthpay.Size = new Size(102, 61);
+            monthpay.TabIndex = 0;
+            monthpay.Text = "月繳";
+            monthpay.UseVisualStyleBackColor = true;
+            monthpay.Click += monthpay_Click;
             // 
             // totalpay
             // 
-            this.totalpay.Location = new System.Drawing.Point(294, 307);
-            this.totalpay.Name = "totalpay";
-            this.totalpay.Size = new System.Drawing.Size(87, 49);
-            this.totalpay.TabIndex = 1;
-            this.totalpay.Text = "總付額";
-            this.totalpay.UseVisualStyleBackColor = true;
-            this.totalpay.Click += new System.EventHandler(this.totalpay_Click);
+            totalpay.Location = new Point(343, 384);
+            totalpay.Margin = new Padding(4, 4, 4, 4);
+            totalpay.Name = "totalpay";
+            totalpay.Size = new Size(102, 61);
+            totalpay.TabIndex = 1;
+            totalpay.Text = "總付額";
+            totalpay.UseVisualStyleBackColor = true;
+            totalpay.Click += totalpay_Click;
             // 
             // showinf
             // 
-            this.showinf.Location = new System.Drawing.Point(463, 307);
-            this.showinf.Name = "showinf";
-            this.showinf.Size = new System.Drawing.Size(87, 49);
-            this.showinf.TabIndex = 2;
-            this.showinf.Text = "顯示內容";
-            this.showinf.UseVisualStyleBackColor = true;
-            this.showinf.Click += new System.EventHandler(this.showinf_Click);
+            showinf.Location = new Point(540, 384);
+            showinf.Margin = new Padding(4, 4, 4, 4);
+            showinf.Name = "showinf";
+            showinf.Size = new Size(102, 61);
+            showinf.TabIndex = 2;
+            showinf.Text = "顯示內容";
+            showinf.UseVisualStyleBackColor = true;
+            showinf.Click += showinf_Click;
             // 
             // Loanamount
             // 
-            this.Loanamount.AutoSize = true;
-            this.Loanamount.BackColor = System.Drawing.Color.Transparent;
-            this.Loanamount.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Loanamount.Location = new System.Drawing.Point(73, 72);
-            this.Loanamount.Name = "Loanamount";
-            this.Loanamount.Size = new System.Drawing.Size(74, 21);
-            this.Loanamount.TabIndex = 3;
-            this.Loanamount.Text = "貸款金額";
+            Loanamount.AutoSize = true;
+            Loanamount.BackColor = Color.Transparent;
+            Loanamount.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Loanamount.Location = new Point(85, 90);
+            Loanamount.Margin = new Padding(4, 0, 4, 0);
+            Loanamount.Name = "Loanamount";
+            Loanamount.Size = new Size(74, 21);
+            Loanamount.TabIndex = 3;
+            Loanamount.Text = "貸款金額";
             // 
             // Year
             // 
-            this.Year.AutoSize = true;
-            this.Year.BackColor = System.Drawing.Color.Transparent;
-            this.Year.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Year.Location = new System.Drawing.Point(73, 120);
-            this.Year.Name = "Year";
-            this.Year.Size = new System.Drawing.Size(70, 21);
-            this.Year.TabIndex = 4;
-            this.Year.Text = "期限(年)";
-            this.Year.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            Year.AutoSize = true;
+            Year.BackColor = Color.Transparent;
+            Year.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Year.Location = new Point(85, 150);
+            Year.Margin = new Padding(4, 0, 4, 0);
+            Year.Name = "Year";
+            Year.Size = new Size(70, 21);
+            Year.TabIndex = 4;
+            Year.Text = "期限(年)";
+            Year.TextAlign = ContentAlignment.BottomCenter;
             // 
             // interestrate
             // 
-            this.interestrate.AutoSize = true;
-            this.interestrate.BackColor = System.Drawing.Color.Transparent;
-            this.interestrate.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.interestrate.Location = new System.Drawing.Point(73, 163);
-            this.interestrate.Name = "interestrate";
-            this.interestrate.Size = new System.Drawing.Size(42, 21);
-            this.interestrate.TabIndex = 5;
-            this.interestrate.Text = "利率";
-            this.interestrate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            interestrate.AutoSize = true;
+            interestrate.BackColor = Color.Transparent;
+            interestrate.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            interestrate.Location = new Point(85, 204);
+            interestrate.Margin = new Padding(4, 0, 4, 0);
+            interestrate.Name = "interestrate";
+            interestrate.Size = new Size(42, 21);
+            interestrate.TabIndex = 5;
+            interestrate.Text = "利率";
+            interestrate.TextAlign = ContentAlignment.BottomCenter;
             // 
             // downpayment
             // 
-            this.downpayment.AutoSize = true;
-            this.downpayment.BackColor = System.Drawing.Color.Transparent;
-            this.downpayment.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.downpayment.Location = new System.Drawing.Point(73, 212);
-            this.downpayment.Name = "downpayment";
-            this.downpayment.Size = new System.Drawing.Size(58, 21);
-            this.downpayment.TabIndex = 6;
-            this.downpayment.Text = "頭期款";
-            this.downpayment.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            downpayment.AutoSize = true;
+            downpayment.BackColor = Color.Transparent;
+            downpayment.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            downpayment.Location = new Point(85, 265);
+            downpayment.Margin = new Padding(4, 0, 4, 0);
+            downpayment.Name = "downpayment";
+            downpayment.Size = new Size(58, 21);
+            downpayment.TabIndex = 6;
+            downpayment.Text = "頭期款";
+            downpayment.TextAlign = ContentAlignment.BottomCenter;
             // 
             // LoanamountBox
             // 
-            this.LoanamountBox.Location = new System.Drawing.Point(189, 72);
-            this.LoanamountBox.Name = "LoanamountBox";
-            this.LoanamountBox.ShortcutsEnabled = false;
-            this.LoanamountBox.Size = new System.Drawing.Size(122, 22);
-            this.LoanamountBox.TabIndex = 7;
-            this.LoanamountBox.Text = "100000";
+            LoanamountBox.Location = new Point(220, 90);
+            LoanamountBox.Margin = new Padding(4, 4, 4, 4);
+            LoanamountBox.Name = "LoanamountBox";
+            LoanamountBox.ShortcutsEnabled = false;
+            LoanamountBox.Size = new Size(142, 23);
+            LoanamountBox.TabIndex = 7;
+            LoanamountBox.Text = "100000";
             // 
             // YearBox
             // 
-            this.YearBox.Location = new System.Drawing.Point(189, 119);
-            this.YearBox.Name = "YearBox";
-            this.YearBox.ShortcutsEnabled = false;
-            this.YearBox.Size = new System.Drawing.Size(122, 22);
-            this.YearBox.TabIndex = 8;
-            this.YearBox.Text = "2";
+            YearBox.Location = new Point(220, 149);
+            YearBox.Margin = new Padding(4, 4, 4, 4);
+            YearBox.Name = "YearBox";
+            YearBox.ShortcutsEnabled = false;
+            YearBox.Size = new Size(142, 23);
+            YearBox.TabIndex = 8;
+            YearBox.Text = "2";
             // 
             // interestrateBox
             // 
-            this.interestrateBox.Location = new System.Drawing.Point(189, 163);
-            this.interestrateBox.Name = "interestrateBox";
-            this.interestrateBox.ShortcutsEnabled = false;
-            this.interestrateBox.Size = new System.Drawing.Size(122, 22);
-            this.interestrateBox.TabIndex = 9;
-            this.interestrateBox.Text = "5";
+            interestrateBox.Location = new Point(220, 204);
+            interestrateBox.Margin = new Padding(4, 4, 4, 4);
+            interestrateBox.Name = "interestrateBox";
+            interestrateBox.ShortcutsEnabled = false;
+            interestrateBox.Size = new Size(142, 23);
+            interestrateBox.TabIndex = 9;
+            interestrateBox.Text = "5";
             // 
             // downpaymentBox
             // 
-            this.downpaymentBox.Location = new System.Drawing.Point(189, 211);
-            this.downpaymentBox.Name = "downpaymentBox";
-            this.downpaymentBox.ShortcutsEnabled = false;
-            this.downpaymentBox.Size = new System.Drawing.Size(122, 22);
-            this.downpaymentBox.TabIndex = 10;
-            this.downpaymentBox.Text = "0";
+            downpaymentBox.Location = new Point(220, 264);
+            downpaymentBox.Margin = new Padding(4, 4, 4, 4);
+            downpaymentBox.Name = "downpaymentBox";
+            downpaymentBox.ShortcutsEnabled = false;
+            downpaymentBox.Size = new Size(142, 23);
+            downpaymentBox.TabIndex = 10;
+            downpaymentBox.Text = "0";
             // 
             // labmonth
             // 
-            this.labmonth.AutoSize = true;
-            this.labmonth.BackColor = System.Drawing.Color.Transparent;
-            this.labmonth.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labmonth.ForeColor = System.Drawing.Color.Transparent;
-            this.labmonth.Location = new System.Drawing.Point(137, 373);
-            this.labmonth.Name = "labmonth";
-            this.labmonth.Size = new System.Drawing.Size(0, 21);
-            this.labmonth.TabIndex = 11;
-            this.labmonth.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            labmonth.AutoSize = true;
+            labmonth.BackColor = Color.Transparent;
+            labmonth.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labmonth.ForeColor = Color.Transparent;
+            labmonth.Location = new Point(160, 466);
+            labmonth.Margin = new Padding(4, 0, 4, 0);
+            labmonth.Name = "labmonth";
+            labmonth.Size = new Size(0, 21);
+            labmonth.TabIndex = 11;
+            labmonth.TextAlign = ContentAlignment.BottomCenter;
             // 
-            // repaymentform
+            // _02Hwrepaymentform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labmonth);
-            this.Controls.Add(this.downpaymentBox);
-            this.Controls.Add(this.interestrateBox);
-            this.Controls.Add(this.YearBox);
-            this.Controls.Add(this.LoanamountBox);
-            this.Controls.Add(this.downpayment);
-            this.Controls.Add(this.interestrate);
-            this.Controls.Add(this.Year);
-            this.Controls.Add(this.Loanamount);
-            this.Controls.Add(this.showinf);
-            this.Controls.Add(this.totalpay);
-            this.Controls.Add(this.monthpay);
-            this.Name = "repaymentform";
-            this.Text = "還款試算表";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(742, 502);
+            Controls.Add(labmonth);
+            Controls.Add(downpaymentBox);
+            Controls.Add(interestrateBox);
+            Controls.Add(YearBox);
+            Controls.Add(LoanamountBox);
+            Controls.Add(downpayment);
+            Controls.Add(interestrate);
+            Controls.Add(Year);
+            Controls.Add(Loanamount);
+            Controls.Add(showinf);
+            Controls.Add(totalpay);
+            Controls.Add(monthpay);
+            Margin = new Padding(4, 4, 4, 4);
+            Name = "_02Hwrepaymentform";
+            Text = "還款試算表";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

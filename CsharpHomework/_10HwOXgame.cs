@@ -294,7 +294,7 @@ namespace  CsharpHomework
             }
             else if (win9 == true)
             {
-                MessageBox.Show("完局", $"恭喜{btn01.Text}方獲得勝利", MessageBoxButtons.OK);
+                MessageBox.Show($"恭喜{btn01.Text}方獲得勝利","完局", MessageBoxButtons.OK);
                 Restar();
             }
             else if (win10 == true)

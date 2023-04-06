@@ -19,16 +19,19 @@ namespace CsharpHomework
         }
         private void _11ScreenSaver_MouseMove(object sender, MouseEventArgs e)
         {
-            if (timer2.Enabled == false)
-            {
-                Application.Exit();
-            }
+            //if (timer2.Enabled == false)
+            //{
+            //    Application.Exit();
+            //}
         }
 
         private void _11ScreenSaver_MouseDown(object sender, MouseEventArgs e)
         {
-           
-            //Application.Exit();
+
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Close();
+            }
         }
 
         private int dx = 8;
@@ -96,10 +99,10 @@ namespace CsharpHomework
 
         private void _11ScreenSaver_MouseUp(object sender, MouseEventArgs e)
         {
-            if (timer2.Enabled == true)
-            {
-                timer2.Enabled = false;
-            }
+            //if (timer2.Enabled == true)
+            //{
+            //    timer2.Enabled = false;
+            //}
         }
 
 

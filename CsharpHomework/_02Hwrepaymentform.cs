@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace  CsharpHomework
+namespace CsharpHomework
 {
     public partial class _02Hwrepaymentform : Form
     {
@@ -75,12 +75,12 @@ namespace  CsharpHomework
             */
 
             double tal = (a - d) * (Math.Pow((1 + c / 12), b * 12) * (c / 12)) / (Math.Pow((1 + c / 12), b * 12) - 1);
-            double tal2 = Math.Round(tal) * b*12;
-            string strtal= Math.Round(tal).ToString();
+            double tal2 = Math.Round(tal) * b * 12;
+            string strtal = Math.Round(tal).ToString();
             string strtal2 = tal2.ToString();
-            _02Hwrepaymentshow formB = new _02Hwrepaymentshow(LoanamountBox.Text, YearBox.Text,interestrateBox.Text,strtal,strtal2);
+            _02Hwrepaymentshow formB = new _02Hwrepaymentshow(LoanamountBox.Text, YearBox.Text, interestrateBox.Text, strtal, strtal2);
             formB.Show();
         }
     }
- }
+}
 

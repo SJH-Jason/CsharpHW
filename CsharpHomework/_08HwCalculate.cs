@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CsharpHomework
 {
-    public partial class calculateform : Form
+    public partial class _08Hwcalculateform : Form
     {
-        public calculateform()
+        public _08Hwcalculateform()
         {
             InitializeComponent();
         }
