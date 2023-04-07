@@ -52,6 +52,15 @@
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.txtNum2 = new System.Windows.Forms.TextBox();
             this.labSerCn = new System.Windows.Forms.Label();
+            this.List = new System.Windows.Forms.ListView();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
             this.palList.SuspendLayout();
             this.palShow.SuspendLayout();
             this.SuspendLayout();
@@ -223,7 +232,8 @@
             this.palList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.palList.Controls.Add(this.labScoreList);
             this.palList.Controls.Add(this.labformheader);
-            this.palList.Location = new System.Drawing.Point(174, 7);
+            this.palList.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.palList.Location = new System.Drawing.Point(730, 24);
             this.palList.Name = "palList";
             this.palList.Size = new System.Drawing.Size(515, 316);
             this.palList.TabIndex = 23;
@@ -232,10 +242,10 @@
             // 
             this.labScoreList.AutoSize = true;
             this.labScoreList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labScoreList.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labScoreList.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labScoreList.Location = new System.Drawing.Point(3, 38);
             this.labScoreList.Name = "labScoreList";
-            this.labScoreList.Size = new System.Drawing.Size(2, 22);
+            this.labScoreList.Size = new System.Drawing.Size(2, 18);
             this.labScoreList.TabIndex = 27;
             // 
             // labformheader
@@ -293,11 +303,63 @@
             this.labSerCn.TabIndex = 28;
             this.labSerCn.Text = "國文分數範圍";
             // 
+            // List
+            // 
+            this.List.BackColor = System.Drawing.SystemColors.Control;
+            this.List.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8});
+            this.List.Location = new System.Drawing.Point(174, 24);
+            this.List.Name = "List";
+            this.List.Size = new System.Drawing.Size(515, 321);
+            this.List.TabIndex = 29;
+            this.List.UseCompatibleStateImageBehavior = false;
+            this.List.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "姓名";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "國文";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "英文";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "數學";
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "總和";
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "平均";
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "最低";
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "最高";
+            // 
             // _05HwStudentScoreForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 610);
+            this.ClientSize = new System.Drawing.Size(713, 610);
+            this.Controls.Add(this.List);
             this.Controls.Add(this.labSerCn);
             this.Controls.Add(this.txtNum2);
             this.Controls.Add(this.txtNum1);
@@ -356,5 +418,14 @@
         private TextBox txtNum1;
         private TextBox txtNum2;
         private Label labSerCn;
+        private ListView List;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
+        private ColumnHeader columnHeader5;
+        private ColumnHeader columnHeader6;
+        private ColumnHeader columnHeader7;
+        private ColumnHeader columnHeader8;
     }
 }

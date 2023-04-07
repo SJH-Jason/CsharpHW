@@ -476,8 +476,16 @@ namespace CsharpHomework
                 for (int j = 2; j < 10; j++)
                 {
                 int ans = i * j;
-                string ansStr = ans.ToString().PadLeft(2, ' '); //PadLeft 將算式結果轉換為字串後填充空格
-                sb.Append($" {j}x{i}={ansStr,3}|"); 
+                    if (ans < 10)
+                    {
+                        string ansStr = ans.ToString().PadLeft(2, ' '); //PadLeft 將算式結果轉換為字串後填充空格
+                        sb.Append($" {j}x{i}=  {ansStr,3} |");
+                    }
+                    else
+                    {
+                        string ansStr = ans.ToString().PadLeft(2, ' '); //PadLeft 將算式結果轉換為字串後填充空格
+                        sb.Append($" {j}x{i}= {ansStr,3} |");
+                    }
                 }
                 sb.AppendLine();
                 labAns.Text = sb.ToString();
