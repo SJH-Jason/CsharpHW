@@ -128,7 +128,7 @@ namespace CsharpHomework
         private void btn14_Click(object sender, EventArgs e)
         {
             splitContainer2.Panel2.Controls.Clear();
-            _14HwPictureViewers Hw14= new _14HwPictureViewers();
+            _14HwPictureViewers Hw14 = new _14HwPictureViewers();
             Hw14.TopLevel = false;
             Hw14.Dock = DockStyle.None;
             splitContainer2.Panel2.Controls.Add(Hw14);
