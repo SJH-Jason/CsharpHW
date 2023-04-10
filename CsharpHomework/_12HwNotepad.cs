@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CsharpHomework
 {
@@ -17,11 +18,11 @@ namespace CsharpHomework
         {
             InitializeComponent();
         }
-     
+
         private void _12HwNotepad_Load(object sender, EventArgs e)
         {
 
-             timer1.Start();
+            timer1.Start();
 
         }
 
@@ -61,9 +62,9 @@ namespace CsharpHomework
         {
 
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog()==DialogResult.OK)
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                txtword.Text=File.ReadAllText(openFileDialog.FileName,Encoding.Default);
+                txtword.Text = File.ReadAllText(openFileDialog.FileName, Encoding.Default);
             }
         }
 
@@ -73,12 +74,12 @@ namespace CsharpHomework
             {
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    File.WriteAllText(saveFileDialog.FileName, txtword.Text,Encoding.Default);
+                    File.WriteAllText(saveFileDialog.FileName, txtword.Text, Encoding.Default);
                 }
             }
             else
             {
-                File.WriteAllText(openFileDialog.FileName,txtword.Text,Encoding.Default);
+                File.WriteAllText(openFileDialog.FileName, txtword.Text, Encoding.Default);
             }
         }
 
@@ -168,9 +169,9 @@ namespace CsharpHomework
         private void 字型ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FontDialog fontDialog = new FontDialog();
-            if(fontDialog.ShowDialog()==DialogResult.OK) 
+            if (fontDialog.ShowDialog() == DialogResult.OK)
             {
-                txtword.Font = fontDialog.Font;    
+                txtword.Font = fontDialog.Font;
             }
         }
 
@@ -203,6 +204,18 @@ namespace CsharpHomework
         private void 紫色ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtword.ForeColor = Color.Purple;
+        }
+
+        private void toToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string selectedText = txtword.SelectedText;
+            txtword.SelectedText = selectedText.ToUpper();
+        }
+
+        private void toLowerLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string selectedText = txtword.SelectedText;
+            txtword.SelectedText = selectedText.ToLower();
         }
     }
 }

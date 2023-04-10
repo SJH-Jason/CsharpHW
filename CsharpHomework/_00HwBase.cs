@@ -109,9 +109,9 @@ namespace CsharpHomework
         {
             splitContainer2.Panel2.Controls.Clear();
             _12HwNotepad Hw12 = new _12HwNotepad();
-            Hw12.TopLevel = false;
-            Hw12.Dock = DockStyle.None;
-            splitContainer2.Panel2.Controls.Add(Hw12);
+            //Hw12.TopLevel = false;
+            //Hw12.Dock = DockStyle.None;
+            //splitContainer2.Panel2.Controls.Add(Hw12);
             Hw12.Show();
         }
 
