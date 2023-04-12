@@ -1,4 +1,4 @@
-﻿namespace  CsharpHomework
+﻿namespace CsharpHomework
 {
     partial class _10HwOXgame
     {
@@ -28,198 +28,212 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn01 = new System.Windows.Forms.Button();
-            this.btn02 = new System.Windows.Forms.Button();
-            this.btn03 = new System.Windows.Forms.Button();
-            this.btn04 = new System.Windows.Forms.Button();
-            this.btn05 = new System.Windows.Forms.Button();
-            this.btn06 = new System.Windows.Forms.Button();
-            this.btn07 = new System.Windows.Forms.Button();
-            this.btn08 = new System.Windows.Forms.Button();
-            this.btn09 = new System.Windows.Forms.Button();
-            this.labOXgame = new System.Windows.Forms.Label();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            btn01 = new Button();
+            btn02 = new Button();
+            btn03 = new Button();
+            btn04 = new Button();
+            btn05 = new Button();
+            btn06 = new Button();
+            btn07 = new Button();
+            btn08 = new Button();
+            btn09 = new Button();
+            labOXgame = new Label();
+            btnReset = new Button();
+            btnExit = new Button();
+            SuspendLayout();
             // 
             // btn01
             // 
-            this.btn01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btn01.FlatAppearance.BorderSize = 2;
-            this.btn01.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn01.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn01.ForeColor = System.Drawing.Color.Maroon;
-            this.btn01.Location = new System.Drawing.Point(50, 60);
-            this.btn01.Name = "btn01";
-            this.btn01.Size = new System.Drawing.Size(50, 50);
-            this.btn01.TabIndex = 0;
-            this.btn01.UseVisualStyleBackColor = false;
-            this.btn01.Click += new System.EventHandler(this.btn01_Click);
+            btn01.BackColor = Color.FromArgb(255, 255, 192);
+            btn01.FlatAppearance.BorderSize = 2;
+            btn01.FlatStyle = FlatStyle.Popup;
+            btn01.Font = new Font("微軟正黑體", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn01.ForeColor = Color.Maroon;
+            btn01.Location = new Point(58, 75);
+            btn01.Margin = new Padding(4);
+            btn01.Name = "btn01";
+            btn01.Size = new Size(58, 62);
+            btn01.TabIndex = 0;
+            btn01.UseVisualStyleBackColor = false;
+            btn01.Click += btn01_Click;
             // 
             // btn02
             // 
-            this.btn02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btn02.FlatAppearance.BorderSize = 2;
-            this.btn02.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn02.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn02.ForeColor = System.Drawing.Color.Maroon;
-            this.btn02.Location = new System.Drawing.Point(110, 60);
-            this.btn02.Name = "btn02";
-            this.btn02.Size = new System.Drawing.Size(50, 50);
-            this.btn02.TabIndex = 1;
-            this.btn02.UseVisualStyleBackColor = false;
-            this.btn02.Click += new System.EventHandler(this.btn02_Click);
+            btn02.BackColor = Color.FromArgb(255, 255, 192);
+            btn02.FlatAppearance.BorderSize = 2;
+            btn02.FlatStyle = FlatStyle.Popup;
+            btn02.Font = new Font("微軟正黑體", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn02.ForeColor = Color.Maroon;
+            btn02.Location = new Point(128, 75);
+            btn02.Margin = new Padding(4);
+            btn02.Name = "btn02";
+            btn02.Size = new Size(58, 62);
+            btn02.TabIndex = 1;
+            btn02.UseVisualStyleBackColor = false;
+            btn02.Click += btn02_Click;
             // 
             // btn03
             // 
-            this.btn03.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btn03.FlatAppearance.BorderSize = 2;
-            this.btn03.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn03.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn03.ForeColor = System.Drawing.Color.Maroon;
-            this.btn03.Location = new System.Drawing.Point(170, 60);
-            this.btn03.Name = "btn03";
-            this.btn03.Size = new System.Drawing.Size(50, 50);
-            this.btn03.TabIndex = 2;
-            this.btn03.UseVisualStyleBackColor = false;
-            this.btn03.Click += new System.EventHandler(this.btn03_Click);
+            btn03.BackColor = Color.FromArgb(255, 255, 192);
+            btn03.FlatAppearance.BorderSize = 2;
+            btn03.FlatStyle = FlatStyle.Popup;
+            btn03.Font = new Font("微軟正黑體", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn03.ForeColor = Color.Maroon;
+            btn03.Location = new Point(198, 75);
+            btn03.Margin = new Padding(4);
+            btn03.Name = "btn03";
+            btn03.Size = new Size(58, 62);
+            btn03.TabIndex = 2;
+            btn03.UseVisualStyleBackColor = false;
+            btn03.Click += btn03_Click;
             // 
             // btn04
             // 
-            this.btn04.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btn04.FlatAppearance.BorderSize = 2;
-            this.btn04.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn04.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn04.ForeColor = System.Drawing.Color.Maroon;
-            this.btn04.Location = new System.Drawing.Point(50, 130);
-            this.btn04.Name = "btn04";
-            this.btn04.Size = new System.Drawing.Size(50, 50);
-            this.btn04.TabIndex = 3;
-            this.btn04.UseVisualStyleBackColor = false;
-            this.btn04.Click += new System.EventHandler(this.btn04_Click);
+            btn04.BackColor = Color.FromArgb(255, 255, 192);
+            btn04.FlatAppearance.BorderSize = 2;
+            btn04.FlatStyle = FlatStyle.Popup;
+            btn04.Font = new Font("微軟正黑體", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn04.ForeColor = Color.Maroon;
+            btn04.Location = new Point(58, 162);
+            btn04.Margin = new Padding(4);
+            btn04.Name = "btn04";
+            btn04.Size = new Size(58, 62);
+            btn04.TabIndex = 3;
+            btn04.UseVisualStyleBackColor = false;
+            btn04.Click += btn04_Click;
             // 
             // btn05
             // 
-            this.btn05.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btn05.FlatAppearance.BorderSize = 2;
-            this.btn05.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn05.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn05.ForeColor = System.Drawing.Color.Maroon;
-            this.btn05.Location = new System.Drawing.Point(110, 130);
-            this.btn05.Name = "btn05";
-            this.btn05.Size = new System.Drawing.Size(50, 50);
-            this.btn05.TabIndex = 4;
-            this.btn05.UseVisualStyleBackColor = false;
-            this.btn05.Click += new System.EventHandler(this.btn05_Click);
+            btn05.BackColor = Color.FromArgb(255, 255, 192);
+            btn05.FlatAppearance.BorderSize = 2;
+            btn05.FlatStyle = FlatStyle.Popup;
+            btn05.Font = new Font("微軟正黑體", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn05.ForeColor = Color.Maroon;
+            btn05.Location = new Point(128, 162);
+            btn05.Margin = new Padding(4);
+            btn05.Name = "btn05";
+            btn05.Size = new Size(58, 62);
+            btn05.TabIndex = 4;
+            btn05.UseVisualStyleBackColor = false;
+            btn05.Click += btn05_Click;
             // 
             // btn06
             // 
-            this.btn06.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btn06.FlatAppearance.BorderSize = 2;
-            this.btn06.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn06.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn06.ForeColor = System.Drawing.Color.Maroon;
-            this.btn06.Location = new System.Drawing.Point(170, 130);
-            this.btn06.Name = "btn06";
-            this.btn06.Size = new System.Drawing.Size(50, 50);
-            this.btn06.TabIndex = 5;
-            this.btn06.UseVisualStyleBackColor = false;
-            this.btn06.Click += new System.EventHandler(this.btn06_Click);
+            btn06.BackColor = Color.FromArgb(255, 255, 192);
+            btn06.FlatAppearance.BorderSize = 2;
+            btn06.FlatStyle = FlatStyle.Popup;
+            btn06.Font = new Font("微軟正黑體", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn06.ForeColor = Color.Maroon;
+            btn06.Location = new Point(198, 162);
+            btn06.Margin = new Padding(4);
+            btn06.Name = "btn06";
+            btn06.Size = new Size(58, 62);
+            btn06.TabIndex = 5;
+            btn06.UseVisualStyleBackColor = false;
+            btn06.Click += btn06_Click;
             // 
             // btn07
             // 
-            this.btn07.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btn07.FlatAppearance.BorderSize = 2;
-            this.btn07.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn07.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn07.ForeColor = System.Drawing.Color.Maroon;
-            this.btn07.Location = new System.Drawing.Point(50, 200);
-            this.btn07.Name = "btn07";
-            this.btn07.Size = new System.Drawing.Size(50, 50);
-            this.btn07.TabIndex = 6;
-            this.btn07.UseVisualStyleBackColor = false;
-            this.btn07.Click += new System.EventHandler(this.btn07_Click);
+            btn07.BackColor = Color.FromArgb(255, 255, 192);
+            btn07.FlatAppearance.BorderSize = 2;
+            btn07.FlatStyle = FlatStyle.Popup;
+            btn07.Font = new Font("微軟正黑體", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn07.ForeColor = Color.Maroon;
+            btn07.Location = new Point(58, 250);
+            btn07.Margin = new Padding(4);
+            btn07.Name = "btn07";
+            btn07.Size = new Size(58, 62);
+            btn07.TabIndex = 6;
+            btn07.UseVisualStyleBackColor = false;
+            btn07.Click += btn07_Click;
             // 
             // btn08
             // 
-            this.btn08.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btn08.FlatAppearance.BorderSize = 2;
-            this.btn08.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn08.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn08.ForeColor = System.Drawing.Color.Maroon;
-            this.btn08.Location = new System.Drawing.Point(110, 200);
-            this.btn08.Name = "btn08";
-            this.btn08.Size = new System.Drawing.Size(50, 50);
-            this.btn08.TabIndex = 7;
-            this.btn08.UseVisualStyleBackColor = false;
-            this.btn08.Click += new System.EventHandler(this.btn08_Click);
+            btn08.BackColor = Color.FromArgb(255, 255, 192);
+            btn08.FlatAppearance.BorderSize = 2;
+            btn08.FlatStyle = FlatStyle.Popup;
+            btn08.Font = new Font("微軟正黑體", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn08.ForeColor = Color.Maroon;
+            btn08.Location = new Point(128, 250);
+            btn08.Margin = new Padding(4);
+            btn08.Name = "btn08";
+            btn08.Size = new Size(58, 62);
+            btn08.TabIndex = 7;
+            btn08.UseVisualStyleBackColor = false;
+            btn08.Click += btn08_Click;
             // 
             // btn09
             // 
-            this.btn09.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btn09.FlatAppearance.BorderSize = 2;
-            this.btn09.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn09.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn09.ForeColor = System.Drawing.Color.Maroon;
-            this.btn09.Location = new System.Drawing.Point(170, 200);
-            this.btn09.Name = "btn09";
-            this.btn09.Size = new System.Drawing.Size(50, 50);
-            this.btn09.TabIndex = 8;
-            this.btn09.UseVisualStyleBackColor = false;
-            this.btn09.Click += new System.EventHandler(this.btn09_Click);
+            btn09.BackColor = Color.FromArgb(255, 255, 192);
+            btn09.FlatAppearance.BorderSize = 2;
+            btn09.FlatStyle = FlatStyle.Popup;
+            btn09.Font = new Font("微軟正黑體", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn09.ForeColor = Color.Maroon;
+            btn09.Location = new Point(198, 250);
+            btn09.Margin = new Padding(4);
+            btn09.Name = "btn09";
+            btn09.Size = new Size(58, 62);
+            btn09.TabIndex = 8;
+            btn09.UseVisualStyleBackColor = false;
+            btn09.Click += btn09_Click;
             // 
             // labOXgame
             // 
-            this.labOXgame.AutoSize = true;
-            this.labOXgame.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labOXgame.Location = new System.Drawing.Point(79, 9);
-            this.labOXgame.Name = "labOXgame";
-            this.labOXgame.Size = new System.Drawing.Size(116, 31);
-            this.labOXgame.TabIndex = 9;
-            this.labOXgame.Text = "OXgame";
+            labOXgame.AutoSize = true;
+            labOXgame.Font = new Font("微軟正黑體", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            labOXgame.Location = new Point(92, 11);
+            labOXgame.Margin = new Padding(4, 0, 4, 0);
+            labOXgame.Name = "labOXgame";
+            labOXgame.Size = new Size(116, 31);
+            labOXgame.TabIndex = 9;
+            labOXgame.Text = "OXgame";
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(251, 90);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(50, 50);
-            this.btnReset.TabIndex = 10;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            btnReset.Location = new Point(293, 112);
+            btnReset.Margin = new Padding(4);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(58, 62);
+            btnReset.TabIndex = 10;
+            btnReset.Text = "Reset";
+            btnReset.UseVisualStyleBackColor = true;
+            btnReset.Click += btnReset_Click;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(251, 161);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(50, 50);
-            this.btnExit.TabIndex = 11;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            btnExit.Location = new Point(293, 201);
+            btnExit.Margin = new Padding(4);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(58, 62);
+            btnExit.TabIndex = 11;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
-            // OXgame
+            // _10HwOXgame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 311);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.labOXgame);
-            this.Controls.Add(this.btn09);
-            this.Controls.Add(this.btn08);
-            this.Controls.Add(this.btn07);
-            this.Controls.Add(this.btn06);
-            this.Controls.Add(this.btn05);
-            this.Controls.Add(this.btn04);
-            this.Controls.Add(this.btn03);
-            this.Controls.Add(this.btn02);
-            this.Controls.Add(this.btn01);
-            this.Name = "OXgame";
-            this.Text = "OXgame";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(390, 389);
+            Controls.Add(btnExit);
+            Controls.Add(btnReset);
+            Controls.Add(labOXgame);
+            Controls.Add(btn09);
+            Controls.Add(btn08);
+            Controls.Add(btn07);
+            Controls.Add(btn06);
+            Controls.Add(btn05);
+            Controls.Add(btn04);
+            Controls.Add(btn03);
+            Controls.Add(btn02);
+            Controls.Add(btn01);
+            KeyPreview = true;
+            Margin = new Padding(4);
+            Name = "_10HwOXgame";
+            Text = "OXgame";
+            KeyDown += _10HwOXgame_KeyDown;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

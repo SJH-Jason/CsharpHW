@@ -10,7 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace  CsharpHomework
+namespace CsharpHomework
 {
     public partial class _10HwOXgame : Form
     {
@@ -23,12 +23,12 @@ namespace  CsharpHomework
 
         private void btn01_Click(object sender, EventArgs e)
         {
-          if (count==false)
+            if (count == false)
             {
                 btn01.Text = "X";
                 count = true;
             }
-          else
+            else
             {
                 btn01.Text = "O";
                 count = false;
@@ -221,17 +221,17 @@ namespace  CsharpHomework
             btn09.Enabled = true;
             countNo = 0;
         }
-         void GameOver()
+        void GameOver()
         {
-           if(countNo == 9)
+            if (countNo == 9)
             {
                 MessageBox.Show("和局，遊戲結束!");
                 Restar();
             }
-         }
+        }
 
-         void  WinWin()
-            {
+        void WinWin()
+        {
 
             bool win1 = btn01.Text == btn02.Text && btn02.Text == btn03.Text && btn03.Text == "O";
             bool win2 = btn04.Text == btn05.Text && btn05.Text == btn06.Text && btn06.Text == "O";
@@ -250,24 +250,24 @@ namespace  CsharpHomework
             bool win15 = btn01.Text == btn05.Text && btn05.Text == btn09.Text && btn09.Text == "X";
             bool win16 = btn03.Text == btn05.Text && btn05.Text == btn07.Text && btn07.Text == "X";
 
-            if (win1==true)
+            if (win1 == true)
             {
-                MessageBox.Show($"恭喜{btn01.Text}方獲得勝利","完局", MessageBoxButtons.OK);
+                MessageBox.Show($"恭喜{btn01.Text}方獲得勝利", "完局", MessageBoxButtons.OK);
                 Restar();
             }
-            else if(win2==true) 
+            else if (win2 == true)
             {
-                MessageBox.Show($"恭喜{btn04.Text}方獲得勝利","完局", MessageBoxButtons.OK);
+                MessageBox.Show($"恭喜{btn04.Text}方獲得勝利", "完局", MessageBoxButtons.OK);
                 Restar();
             }
             else if (win3 == true)
             {
-                MessageBox.Show($"恭喜{btn07.Text}方獲得勝利","完局", MessageBoxButtons.OK);
+                MessageBox.Show($"恭喜{btn07.Text}方獲得勝利", "完局", MessageBoxButtons.OK);
                 Restar();
             }
             else if (win4 == true)
             {
-                MessageBox.Show($"恭喜{btn01.Text}方獲得勝利","完局", MessageBoxButtons.OK);
+                MessageBox.Show($"恭喜{btn01.Text}方獲得勝利", "完局", MessageBoxButtons.OK);
                 Restar();
             }
             else if (win5 == true)
@@ -294,7 +294,7 @@ namespace  CsharpHomework
             }
             else if (win9 == true)
             {
-                MessageBox.Show($"恭喜{btn01.Text}方獲得勝利","完局", MessageBoxButtons.OK);
+                MessageBox.Show($"恭喜{btn01.Text}方獲得勝利", "完局", MessageBoxButtons.OK);
                 Restar();
             }
             else if (win10 == true)
@@ -342,5 +342,17 @@ namespace  CsharpHomework
             Close();
         }
 
+        private void _10HwOXgame_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.R)
+            {
+                Restar();
+            }
+
+            else if (e.KeyCode == Keys.Escape)
+            {
+                Close();
+            }
+        }
     }
- }
+}
