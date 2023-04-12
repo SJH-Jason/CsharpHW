@@ -508,7 +508,7 @@ namespace CsharpHomework
                 {
                     tal += i;
                 }
-                labAns.Text = $"{Fr} 到 {To} 相隔 {St} \n 加總為 {tal}";
+                labAns.Text = $"{Fr} 到 {To} 相隔 {St-1} \n 加總為 {tal}";
             }
             else
             {
@@ -529,7 +529,7 @@ namespace CsharpHomework
                     tal += i;
                     i += St;
                 }
-                labAns.Text = $"{Fr} 到 {To} 相隔 {St} \n 加總為 {tal}";
+                labAns.Text = $"{Fr} 到 {To} 相隔 {St-1} \n 加總為 {tal}";
             }
            
             else
@@ -552,7 +552,7 @@ namespace CsharpHomework
                     i += St;
                 }
                 while (i <= To);
-                labAns.Text = $"{Fr} 到 {To} 相隔 {St} \n 加總為 {tal}";
+                labAns.Text = $"{Fr} 到 {To} 相隔 {St-1} \n 加總為 {tal}";
             }
 
             else
