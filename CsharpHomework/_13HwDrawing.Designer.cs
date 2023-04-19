@@ -28,152 +28,149 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnColor = new System.Windows.Forms.Button();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.labColor = new System.Windows.Forms.Label();
-            this.trbPen = new System.Windows.Forms.TrackBar();
-            this.labPen = new System.Windows.Forms.Label();
-            this.ptbwhite = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.檔案ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.開新檔案ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.開啟舊檔ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.另存新檔ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.結束ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.trbPen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbwhite)).BeginInit();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            btnColor = new Button();
+            colorDialog1 = new ColorDialog();
+            labColor = new Label();
+            trbPen = new TrackBar();
+            labPen = new Label();
+            ptbwhite = new PictureBox();
+            menuStrip1 = new MenuStrip();
+            檔案ToolStripMenuItem = new ToolStripMenuItem();
+            開新檔案ToolStripMenuItem = new ToolStripMenuItem();
+            開啟舊檔ToolStripMenuItem = new ToolStripMenuItem();
+            另存新檔ToolStripMenuItem = new ToolStripMenuItem();
+            結束ToolStripMenuItem = new ToolStripMenuItem();
+            openFileDialog1 = new OpenFileDialog();
+            saveFileDialog1 = new SaveFileDialog();
+            ((System.ComponentModel.ISupportInitialize)trbPen).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ptbwhite).BeginInit();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // btnColor
             // 
-            this.btnColor.Location = new System.Drawing.Point(717, 40);
-            this.btnColor.Name = "btnColor";
-            this.btnColor.Size = new System.Drawing.Size(65, 39);
-            this.btnColor.TabIndex = 0;
-            this.btnColor.Text = "顏色";
-            this.btnColor.UseVisualStyleBackColor = true;
-            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
+            btnColor.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnColor.Location = new Point(717, 40);
+            btnColor.Name = "btnColor";
+            btnColor.Size = new Size(65, 39);
+            btnColor.TabIndex = 0;
+            btnColor.Text = "顏色";
+            btnColor.UseVisualStyleBackColor = true;
+            btnColor.Click += btnColor_Click;
             // 
             // labColor
             // 
-            this.labColor.BackColor = System.Drawing.Color.Black;
-            this.labColor.Location = new System.Drawing.Point(717, 99);
-            this.labColor.Name = "labColor";
-            this.labColor.Size = new System.Drawing.Size(65, 24);
-            this.labColor.TabIndex = 1;
+            labColor.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            labColor.BackColor = Color.Black;
+            labColor.Location = new Point(717, 99);
+            labColor.Name = "labColor";
+            labColor.Size = new Size(65, 24);
+            labColor.TabIndex = 1;
             // 
             // trbPen
             // 
-            this.trbPen.Location = new System.Drawing.Point(737, 137);
-            this.trbPen.Maximum = 100;
-            this.trbPen.Minimum = 1;
-            this.trbPen.Name = "trbPen";
-            this.trbPen.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trbPen.Size = new System.Drawing.Size(45, 180);
-            this.trbPen.TabIndex = 3;
-            this.trbPen.TickFrequency = 10;
-            this.trbPen.Value = 1;
-            this.trbPen.Scroll += new System.EventHandler(this.trbPen_Scroll);
+            trbPen.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            trbPen.Location = new Point(737, 137);
+            trbPen.Maximum = 100;
+            trbPen.Minimum = 1;
+            trbPen.Name = "trbPen";
+            trbPen.Orientation = Orientation.Vertical;
+            trbPen.Size = new Size(45, 180);
+            trbPen.TabIndex = 3;
+            trbPen.TickFrequency = 10;
+            trbPen.Value = 1;
+            trbPen.Scroll += trbPen_Scroll;
             // 
             // labPen
             // 
-            this.labPen.AutoSize = true;
-            this.labPen.Location = new System.Drawing.Point(737, 320);
-            this.labPen.Name = "labPen";
-            this.labPen.Size = new System.Drawing.Size(14, 15);
-            this.labPen.TabIndex = 4;
-            this.labPen.Text = "1";
+            labPen.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            labPen.AutoSize = true;
+            labPen.Location = new Point(737, 320);
+            labPen.Name = "labPen";
+            labPen.Size = new Size(14, 15);
+            labPen.TabIndex = 4;
+            labPen.Text = "1";
             // 
             // ptbwhite
             // 
-            this.ptbwhite.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ptbwhite.Location = new System.Drawing.Point(0, 24);
-            this.ptbwhite.Name = "ptbwhite";
-            this.ptbwhite.Size = new System.Drawing.Size(800, 426);
-            this.ptbwhite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.ptbwhite.TabIndex = 5;
-            this.ptbwhite.TabStop = false;
-            this.ptbwhite.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ptbwhite_MouseDown);
-            this.ptbwhite.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ptbwhite_MouseMove);
+            ptbwhite.Location = new Point(0, 24);
+            ptbwhite.Name = "ptbwhite";
+            ptbwhite.Size = new Size(800, 426);
+            ptbwhite.SizeMode = PictureBoxSizeMode.AutoSize;
+            ptbwhite.TabIndex = 5;
+            ptbwhite.TabStop = false;
+            ptbwhite.MouseDown += ptbwhite_MouseDown;
+            ptbwhite.MouseMove += ptbwhite_MouseMove;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.檔案ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 6;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.Items.AddRange(new ToolStripItem[] { 檔案ToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 6;
+            menuStrip1.Text = "menuStrip1";
             // 
             // 檔案ToolStripMenuItem
             // 
-            this.檔案ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.開新檔案ToolStripMenuItem,
-            this.開啟舊檔ToolStripMenuItem,
-            this.另存新檔ToolStripMenuItem,
-            this.結束ToolStripMenuItem});
-            this.檔案ToolStripMenuItem.Name = "檔案ToolStripMenuItem";
-            this.檔案ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.檔案ToolStripMenuItem.Text = "檔案";
+            檔案ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { 開新檔案ToolStripMenuItem, 開啟舊檔ToolStripMenuItem, 另存新檔ToolStripMenuItem, 結束ToolStripMenuItem });
+            檔案ToolStripMenuItem.Name = "檔案ToolStripMenuItem";
+            檔案ToolStripMenuItem.Size = new Size(43, 20);
+            檔案ToolStripMenuItem.Text = "檔案";
             // 
             // 開新檔案ToolStripMenuItem
             // 
-            this.開新檔案ToolStripMenuItem.Name = "開新檔案ToolStripMenuItem";
-            this.開新檔案ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.開新檔案ToolStripMenuItem.Text = "開新檔案";
-            this.開新檔案ToolStripMenuItem.Click += new System.EventHandler(this.開新檔案ToolStripMenuItem_Click);
+            開新檔案ToolStripMenuItem.Name = "開新檔案ToolStripMenuItem";
+            開新檔案ToolStripMenuItem.Size = new Size(122, 22);
+            開新檔案ToolStripMenuItem.Text = "開新檔案";
+            開新檔案ToolStripMenuItem.Click += 開新檔案ToolStripMenuItem_Click;
             // 
             // 開啟舊檔ToolStripMenuItem
             // 
-            this.開啟舊檔ToolStripMenuItem.Name = "開啟舊檔ToolStripMenuItem";
-            this.開啟舊檔ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.開啟舊檔ToolStripMenuItem.Text = "開啟舊檔";
-            this.開啟舊檔ToolStripMenuItem.Click += new System.EventHandler(this.開啟舊檔ToolStripMenuItem_Click);
+            開啟舊檔ToolStripMenuItem.Name = "開啟舊檔ToolStripMenuItem";
+            開啟舊檔ToolStripMenuItem.Size = new Size(122, 22);
+            開啟舊檔ToolStripMenuItem.Text = "開啟舊檔";
+            開啟舊檔ToolStripMenuItem.Click += 開啟舊檔ToolStripMenuItem_Click;
             // 
             // 另存新檔ToolStripMenuItem
             // 
-            this.另存新檔ToolStripMenuItem.Name = "另存新檔ToolStripMenuItem";
-            this.另存新檔ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.另存新檔ToolStripMenuItem.Text = "另存新檔";
-            this.另存新檔ToolStripMenuItem.Click += new System.EventHandler(this.另存新檔ToolStripMenuItem_Click);
+            另存新檔ToolStripMenuItem.Name = "另存新檔ToolStripMenuItem";
+            另存新檔ToolStripMenuItem.Size = new Size(122, 22);
+            另存新檔ToolStripMenuItem.Text = "另存新檔";
+            另存新檔ToolStripMenuItem.Click += 另存新檔ToolStripMenuItem_Click;
             // 
             // 結束ToolStripMenuItem
             // 
-            this.結束ToolStripMenuItem.Name = "結束ToolStripMenuItem";
-            this.結束ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.結束ToolStripMenuItem.Text = "結束";
+            結束ToolStripMenuItem.Name = "結束ToolStripMenuItem";
+            結束ToolStripMenuItem.Size = new Size(122, 22);
+            結束ToolStripMenuItem.Text = "結束";
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.FileName = "openFileDialog1";
             // 
             // _13HwDrawing
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labPen);
-            this.Controls.Add(this.trbPen);
-            this.Controls.Add(this.labColor);
-            this.Controls.Add(this.btnColor);
-            this.Controls.Add(this.ptbwhite);
-            this.Controls.Add(this.menuStrip1);
-            this.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "_13HwDrawing";
-            this.Text = "_13HwDrawing";
-            this.Load += new System.EventHandler(this._13HwDrawing_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trbPen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbwhite)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(labPen);
+            Controls.Add(trbPen);
+            Controls.Add(labColor);
+            Controls.Add(btnColor);
+            Controls.Add(ptbwhite);
+            Controls.Add(menuStrip1);
+            Cursor = Cursors.Cross;
+            MainMenuStrip = menuStrip1;
+            Name = "_13HwDrawing";
+            Text = "_13HwDrawing";
+            Load += _13HwDrawing_Load;
+            ((System.ComponentModel.ISupportInitialize)trbPen).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ptbwhite).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

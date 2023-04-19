@@ -24,7 +24,7 @@ namespace CsharpHomework
 
         private void btnColor_Click(object sender, EventArgs e)
         {
-           
+
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 myPen.Color = colorDialog1.Color;
@@ -45,9 +45,9 @@ namespace CsharpHomework
 
         private void 開新檔案ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ptbwhite.Image = new Bitmap(800, 600);
-            Graphics g = Graphics.FromImage(ptbwhite.Image);
-            g.Clear(Color.White);
+            ptbwhite.Image = new Bitmap(1600, 1200);
+            Graphics g = Graphics.FromImage(ptbwhite.Image);  //使繪圖直接顯示
+            g.Clear(Color.White);  //顯示白色畫布
         }
 
         private void 開啟舊檔ToolStripMenuItem_Click(object sender, EventArgs e)

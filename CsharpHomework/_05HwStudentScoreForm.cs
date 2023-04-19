@@ -118,11 +118,11 @@ namespace CsharpHomework
                 item.SubItems.Add(Convert.ToString(stData.SumScore));
                 item.SubItems.Add(Convert.ToString(stData.AvgScore));
                 int mm = Math.Min(stData.CnScore, Math.Min(stData.EnScore, stData.MathScore));
-                if (mm==stData.CnScore)
+                if (mm == stData.CnScore)
                 {
                     item.SubItems.Add($"國文{Convert.ToString(mm)}");
                 }
-                else if(mm==stData.EnScore) 
+                else if (mm == stData.EnScore)
                 {
                     item.SubItems.Add($"英文{Convert.ToString(mm)}");
                 }
@@ -131,7 +131,7 @@ namespace CsharpHomework
                     item.SubItems.Add($"數學{Convert.ToString(mm)}");
                 }
 
-               // item.SubItems.Add(Convert.ToString(Math.Min(stData.CnScore,Math.Min(stData.EnScore,stData.MathScore))));
+                // item.SubItems.Add(Convert.ToString(Math.Min(stData.CnScore,Math.Min(stData.EnScore,stData.MathScore))));
                 int MM = Math.Max(stData.CnScore, Math.Max(stData.EnScore, stData.MathScore));
                 if (MM == stData.CnScore)
                 {
@@ -147,7 +147,7 @@ namespace CsharpHomework
                 }
 
                 //item.SubItems.Add(Convert.ToString(Math.Max(stData.CnScore, Math.Max(stData.EnScore, stData.MathScore))));
-                List.Items.Add(item); 
+                List.Items.Add(item);
             }
         }
         public void Random()
@@ -196,7 +196,7 @@ namespace CsharpHomework
 
             count++;
             StDataList.Add(stData);
-            
+
             //輸出資料未確認
             RefreshDataList();
             btnShow.Enabled = true;
@@ -248,7 +248,7 @@ namespace CsharpHomework
                     output += "數學" + stData.MathScore;
                 }
 
-               // labScoreList.Text += $"{stData.StName,5:0}{stData.CnScore,10:0}{stData.EnScore,10:0}{stData.MathScore,10:0}{stData.SumScore,16:0}{stData.AvgScore,8:0}  {output,10:0}\n";
+                // labScoreList.Text += $"{stData.StName,5:0}{stData.CnScore,10:0}{stData.EnScore,10:0}{stData.MathScore,10:0}{stData.SumScore,16:0}{stData.AvgScore,8:0}  {output,10:0}\n";
 
                 count++;
                 //存入結構單元
@@ -383,13 +383,13 @@ namespace CsharpHomework
                 btnShow.Enabled = false;
             }
 
-            if(List.Items.Count == 0) 
+            if (List.Items.Count == 0)
             {
-               List.Items.Clear();
+                List.Items.Clear();
             }
-            else if(List.Items.Count > 0)
+            else if (List.Items.Count > 0)
             {
-                List.Items.RemoveAt(List.Items.Count -1);
+                List.Items.RemoveAt(List.Items.Count - 1);
             }
 
             if (List.Items.Count == 0)
@@ -402,7 +402,7 @@ namespace CsharpHomework
         {
             //不會內容
             int num1, num2;
-            if (int.TryParse(txtNum1.Text, out num1) && int.TryParse(txtNum2.Text, out num2) && num1>=0 && num2 >= 0&& num1<=100&&num2<=100)
+            if (int.TryParse(txtNum1.Text, out num1) && int.TryParse(txtNum2.Text, out num2) && num1 >= 0 && num2 >= 0 && num1 <= 100 && num2 <= 100)
             {
                 labScoreList.Text = "";
                 List.Items.Clear();
@@ -423,37 +423,6 @@ namespace CsharpHomework
                .ToList();
                 foreach (var data in filteredData)
                 {
-                    //labScoreList.Text += $"{data.StName}     {data.CnScore}     {data.EnScore}     {data.MathScore}     {data.SumScore}   {data.AvgScore}  {data.MaxScore}  {data.MinScore}\n";
-                    
-                    string output = "";
-                    if (data.MinScore == data.CnScore)
-                    {
-                        output += "國文" + data.CnScore + "  ";
-                    }
-                    else if (data.MinScore == data.EnScore)
-                    {
-                        output += "英文" + data.EnScore + "  ";
-                    }
-                    else
-                    {
-                        output += "數學" + data.MathScore + "  ";
-                    }
-                    if (data.MaxScore == data.CnScore)
-                    {
-                        output += "國文" + data.CnScore;
-                    }
-                    else if (data.MaxScore == data.EnScore)
-                    {
-                        output += "英文" + data.EnScore;
-                    }
-                    else
-                    {
-                        output += "數學" + data.MathScore;
-                    }
-
-                    labScoreList.Text += $"{data.StName,5:0}{data.CnScore,10:0}{data.EnScore,10:0}{data.MathScore,10:0}{data.SumScore,16:0}{data.AvgScore,8:0}  {output,10:0}\n";
-
-
                     ListViewItem item = new ListViewItem(data.StName);
                     item.SubItems.Add(Convert.ToString(data.CnScore));
                     item.SubItems.Add(Convert.ToString(data.EnScore));
@@ -474,31 +443,60 @@ namespace CsharpHomework
                         item.SubItems.Add($"數學{Convert.ToString(mm)}");
                     }
 
-                    // item.SubItems.Add(Convert.ToString(Math.Min(stData.CnScore,Math.Min(stData.EnScore,stData.MathScore))));
-                    int MM = Math.Max(data.CnScore, Math.Max(data.EnScore, data.MathScore));
-                    if (MM == data.CnScore)
-                    {
-                        item.SubItems.Add($"國文{Convert.ToString(MM)}");
-                    }
-                    else if (MM == data.EnScore)
-                    {
-                        item.SubItems.Add($"英文{Convert.ToString(MM)}");
-                    }
-                    else
-                    {
-                        item.SubItems.Add($"數學{Convert.ToString(MM)}");
-                    }
                     List.Items.Add(item);
+                    //labScoreList.Text += $"{data.StName}     {data.CnScore}     {data.EnScore}     {data.MathScore}     {data.SumScore}   {data.AvgScore}  {data.MaxScore}  {data.MinScore}\n";
 
+                    //string output = "";
+                    //if (data.MinScore == data.CnScore)
+                    //{
+                    //    output += "國文" + data.CnScore + "  ";
+                    //}
+                    //else if (data.MinScore == data.EnScore)
+                    //{
+                    //    output += "英文" + data.EnScore + "  ";
+                    //}
+                    //else
+                    //{
+                    //    output += "數學" + data.MathScore + "  ";
+                    //}
+                    //if (data.MaxScore == data.CnScore)
+                    //{
+                    //    output += "國文" + data.CnScore;
+                    //}
+                    //else if (data.MaxScore == data.EnScore)
+                    //{
+                    //    output += "英文" + data.EnScore;
+                    //}
+                    //else
+                    //{
+                    //    output += "數學" + data.MathScore;
+                    //}
+
+                    //labScoreList.Text += $"{data.StName,5:0}{data.CnScore,10:0}{data.EnScore,10:0}{data.MathScore,10:0}{data.SumScore,16:0}{data.AvgScore,8:0}  {output,10:0}\n";
+
+                    // item.SubItems.Add(Convert.ToString(Math.Min(stData.CnScore,Math.Min(stData.EnScore,stData.MathScore))));
+                    //int MM = Math.Max(data.CnScore, Math.Max(data.EnScore, data.MathScore));
+                    //if (MM == data.CnScore)
+                    //{
+                    //    item.SubItems.Add($"國文{Convert.ToString(MM)}");
+                    //}
+                    //else if (MM == data.EnScore)
+                    //{
+                    //    item.SubItems.Add($"英文{Convert.ToString(MM)}");
+                    //}
+                    //else
+                    //{
+                    //    item.SubItems.Add($"數學{Convert.ToString(MM)}");
+                    //}
                 }
             }
-            else 
+            else
             {
                 MessageBox.Show("請輸入0~100內數字!");
                 return;
             }
         }
 
-      
+
     }
 }

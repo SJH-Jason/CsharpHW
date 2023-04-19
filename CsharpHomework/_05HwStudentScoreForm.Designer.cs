@@ -28,368 +28,359 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labName = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.labCn = new System.Windows.Forms.Label();
-            this.labEn = new System.Windows.Forms.Label();
-            this.labMath = new System.Windows.Forms.Label();
-            this.txtCn = new System.Windows.Forms.TextBox();
-            this.txtEn = new System.Windows.Forms.TextBox();
-            this.txtMath = new System.Windows.Forms.TextBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnShow = new System.Windows.Forms.Button();
-            this.btnRandom = new System.Windows.Forms.Button();
-            this.btnrenew = new System.Windows.Forms.Button();
-            this.btnRandom20 = new System.Windows.Forms.Button();
-            this.btnIns = new System.Windows.Forms.Button();
-            this.btnRemove = new System.Windows.Forms.Button();
-            this.btnSer = new System.Windows.Forms.Button();
-            this.palList = new System.Windows.Forms.Panel();
-            this.labScoreList = new System.Windows.Forms.Label();
-            this.labformheader = new System.Windows.Forms.Label();
-            this.palShow = new System.Windows.Forms.Panel();
-            this.labShow = new System.Windows.Forms.Label();
-            this.txtNum1 = new System.Windows.Forms.TextBox();
-            this.txtNum2 = new System.Windows.Forms.TextBox();
-            this.labSerCn = new System.Windows.Forms.Label();
-            this.List = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
-            this.palList.SuspendLayout();
-            this.palShow.SuspendLayout();
-            this.SuspendLayout();
+            labName = new Label();
+            txtName = new TextBox();
+            labCn = new Label();
+            labEn = new Label();
+            labMath = new Label();
+            txtCn = new TextBox();
+            txtEn = new TextBox();
+            txtMath = new TextBox();
+            btnAdd = new Button();
+            btnShow = new Button();
+            btnRandom = new Button();
+            btnrenew = new Button();
+            btnRandom20 = new Button();
+            btnIns = new Button();
+            btnRemove = new Button();
+            btnSer = new Button();
+            palList = new Panel();
+            labScoreList = new Label();
+            labformheader = new Label();
+            palShow = new Panel();
+            labShow = new Label();
+            txtNum1 = new TextBox();
+            txtNum2 = new TextBox();
+            labSerCn = new Label();
+            List = new ListView();
+            columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
+            columnHeader3 = new ColumnHeader();
+            columnHeader4 = new ColumnHeader();
+            columnHeader5 = new ColumnHeader();
+            columnHeader6 = new ColumnHeader();
+            columnHeader7 = new ColumnHeader();
+            columnHeader8 = new ColumnHeader();
+            palList.SuspendLayout();
+            palShow.SuspendLayout();
+            SuspendLayout();
             // 
             // labName
             // 
-            this.labName.AutoSize = true;
-            this.labName.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labName.Location = new System.Drawing.Point(10, 10);
-            this.labName.Name = "labName";
-            this.labName.Size = new System.Drawing.Size(58, 21);
-            this.labName.TabIndex = 0;
-            this.labName.Text = "姓名：";
+            labName.AutoSize = true;
+            labName.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labName.Location = new Point(10, 10);
+            labName.Name = "labName";
+            labName.Size = new Size(58, 21);
+            labName.TabIndex = 0;
+            labName.Text = "姓名：";
             // 
             // txtName
             // 
-            this.txtName.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtName.Location = new System.Drawing.Point(80, 7);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(62, 29);
-            this.txtName.TabIndex = 4;
+            txtName.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtName.Location = new Point(80, 7);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(62, 29);
+            txtName.TabIndex = 4;
             // 
             // labCn
             // 
-            this.labCn.AutoSize = true;
-            this.labCn.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labCn.Location = new System.Drawing.Point(10, 50);
-            this.labCn.Name = "labCn";
-            this.labCn.Size = new System.Drawing.Size(58, 21);
-            this.labCn.TabIndex = 8;
-            this.labCn.Text = "國文：";
+            labCn.AutoSize = true;
+            labCn.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labCn.Location = new Point(10, 50);
+            labCn.Name = "labCn";
+            labCn.Size = new Size(58, 21);
+            labCn.TabIndex = 8;
+            labCn.Text = "國文：";
             // 
             // labEn
             // 
-            this.labEn.AutoSize = true;
-            this.labEn.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labEn.Location = new System.Drawing.Point(10, 90);
-            this.labEn.Name = "labEn";
-            this.labEn.Size = new System.Drawing.Size(58, 21);
-            this.labEn.TabIndex = 9;
-            this.labEn.Text = "英文：";
+            labEn.AutoSize = true;
+            labEn.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labEn.Location = new Point(10, 90);
+            labEn.Name = "labEn";
+            labEn.Size = new Size(58, 21);
+            labEn.TabIndex = 9;
+            labEn.Text = "英文：";
             // 
             // labMath
             // 
-            this.labMath.AutoSize = true;
-            this.labMath.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labMath.Location = new System.Drawing.Point(10, 130);
-            this.labMath.Name = "labMath";
-            this.labMath.Size = new System.Drawing.Size(58, 21);
-            this.labMath.TabIndex = 10;
-            this.labMath.Text = "數學：";
+            labMath.AutoSize = true;
+            labMath.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labMath.Location = new Point(10, 130);
+            labMath.Name = "labMath";
+            labMath.Size = new Size(58, 21);
+            labMath.TabIndex = 10;
+            labMath.Text = "數學：";
             // 
             // txtCn
             // 
-            this.txtCn.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtCn.Location = new System.Drawing.Point(80, 47);
-            this.txtCn.Name = "txtCn";
-            this.txtCn.Size = new System.Drawing.Size(62, 29);
-            this.txtCn.TabIndex = 11;
+            txtCn.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtCn.Location = new Point(80, 47);
+            txtCn.Name = "txtCn";
+            txtCn.Size = new Size(62, 29);
+            txtCn.TabIndex = 11;
             // 
             // txtEn
             // 
-            this.txtEn.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtEn.Location = new System.Drawing.Point(80, 87);
-            this.txtEn.Name = "txtEn";
-            this.txtEn.Size = new System.Drawing.Size(62, 29);
-            this.txtEn.TabIndex = 12;
+            txtEn.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtEn.Location = new Point(80, 87);
+            txtEn.Name = "txtEn";
+            txtEn.Size = new Size(62, 29);
+            txtEn.TabIndex = 12;
             // 
             // txtMath
             // 
-            this.txtMath.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtMath.Location = new System.Drawing.Point(80, 127);
-            this.txtMath.Name = "txtMath";
-            this.txtMath.Size = new System.Drawing.Size(62, 29);
-            this.txtMath.TabIndex = 13;
+            txtMath.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtMath.Location = new Point(80, 127);
+            txtMath.Name = "txtMath";
+            txtMath.Size = new Size(62, 29);
+            txtMath.TabIndex = 13;
             // 
             // btnAdd
             // 
-            this.btnAdd.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.Location = new System.Drawing.Point(22, 171);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(120, 30);
-            this.btnAdd.TabIndex = 14;
-            this.btnAdd.Text = "加入學生資料";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            btnAdd.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAdd.Location = new Point(22, 171);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(120, 30);
+            btnAdd.TabIndex = 14;
+            btnAdd.Text = "加入學生資料";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnShow
             // 
-            this.btnShow.Enabled = false;
-            this.btnShow.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnShow.Location = new System.Drawing.Point(22, 207);
-            this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(120, 30);
-            this.btnShow.TabIndex = 15;
-            this.btnShow.Text = "各科統計";
-            this.btnShow.UseVisualStyleBackColor = true;
-            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
+            btnShow.Enabled = false;
+            btnShow.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnShow.Location = new Point(22, 207);
+            btnShow.Name = "btnShow";
+            btnShow.Size = new Size(120, 30);
+            btnShow.TabIndex = 15;
+            btnShow.Text = "各科統計";
+            btnShow.UseVisualStyleBackColor = true;
+            btnShow.Click += btnShow_Click;
             // 
             // btnRandom
             // 
-            this.btnRandom.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRandom.Location = new System.Drawing.Point(22, 243);
-            this.btnRandom.Name = "btnRandom";
-            this.btnRandom.Size = new System.Drawing.Size(120, 30);
-            this.btnRandom.TabIndex = 16;
-            this.btnRandom.Text = "隨機生成資料";
-            this.btnRandom.UseVisualStyleBackColor = true;
-            this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
+            btnRandom.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRandom.Location = new Point(22, 243);
+            btnRandom.Name = "btnRandom";
+            btnRandom.Size = new Size(120, 30);
+            btnRandom.TabIndex = 16;
+            btnRandom.Text = "隨機生成資料";
+            btnRandom.UseVisualStyleBackColor = true;
+            btnRandom.Click += btnRandom_Click;
             // 
             // btnrenew
             // 
-            this.btnrenew.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnrenew.Location = new System.Drawing.Point(22, 279);
-            this.btnrenew.Name = "btnrenew";
-            this.btnrenew.Size = new System.Drawing.Size(120, 30);
-            this.btnrenew.TabIndex = 17;
-            this.btnrenew.Text = "清除資料";
-            this.btnrenew.UseVisualStyleBackColor = true;
-            this.btnrenew.Click += new System.EventHandler(this.btnrenew_Click);
+            btnrenew.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnrenew.Location = new Point(22, 279);
+            btnrenew.Name = "btnrenew";
+            btnrenew.Size = new Size(120, 30);
+            btnrenew.TabIndex = 17;
+            btnrenew.Text = "清除資料";
+            btnrenew.UseVisualStyleBackColor = true;
+            btnrenew.Click += btnrenew_Click;
             // 
             // btnRandom20
             // 
-            this.btnRandom20.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRandom20.Location = new System.Drawing.Point(22, 315);
-            this.btnRandom20.Name = "btnRandom20";
-            this.btnRandom20.Size = new System.Drawing.Size(120, 30);
-            this.btnRandom20.TabIndex = 18;
-            this.btnRandom20.Text = "隨機生20筆";
-            this.btnRandom20.UseVisualStyleBackColor = true;
-            this.btnRandom20.Click += new System.EventHandler(this.btnRandom20_Click);
+            btnRandom20.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRandom20.Location = new Point(22, 315);
+            btnRandom20.Name = "btnRandom20";
+            btnRandom20.Size = new Size(120, 30);
+            btnRandom20.TabIndex = 18;
+            btnRandom20.Text = "隨機生20筆";
+            btnRandom20.UseVisualStyleBackColor = true;
+            btnRandom20.Click += btnRandom20_Click;
             // 
             // btnIns
             // 
-            this.btnIns.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnIns.Location = new System.Drawing.Point(22, 351);
-            this.btnIns.Name = "btnIns";
-            this.btnIns.Size = new System.Drawing.Size(120, 30);
-            this.btnIns.TabIndex = 19;
-            this.btnIns.Text = "插入儲存資料";
-            this.btnIns.UseVisualStyleBackColor = true;
-            this.btnIns.Click += new System.EventHandler(this.btnIns_Click);
+            btnIns.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnIns.Location = new Point(22, 351);
+            btnIns.Name = "btnIns";
+            btnIns.Size = new Size(120, 30);
+            btnIns.TabIndex = 19;
+            btnIns.Text = "插入儲存資料";
+            btnIns.UseVisualStyleBackColor = true;
+            btnIns.Click += btnIns_Click;
             // 
             // btnRemove
             // 
-            this.btnRemove.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRemove.Location = new System.Drawing.Point(22, 387);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(120, 30);
-            this.btnRemove.TabIndex = 20;
-            this.btnRemove.Text = "移除儲存資料";
-            this.btnRemove.UseVisualStyleBackColor = true;
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            btnRemove.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRemove.Location = new Point(22, 387);
+            btnRemove.Name = "btnRemove";
+            btnRemove.Size = new Size(120, 30);
+            btnRemove.TabIndex = 20;
+            btnRemove.Text = "移除儲存資料";
+            btnRemove.UseVisualStyleBackColor = true;
+            btnRemove.Click += btnRemove_Click;
             // 
             // btnSer
             // 
-            this.btnSer.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSer.Location = new System.Drawing.Point(22, 423);
-            this.btnSer.Name = "btnSer";
-            this.btnSer.Size = new System.Drawing.Size(120, 30);
-            this.btnSer.TabIndex = 21;
-            this.btnSer.Text = "搜尋";
-            this.btnSer.UseVisualStyleBackColor = true;
-            this.btnSer.Click += new System.EventHandler(this.btnSer_Click);
+            btnSer.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSer.Location = new Point(22, 423);
+            btnSer.Name = "btnSer";
+            btnSer.Size = new Size(120, 30);
+            btnSer.TabIndex = 21;
+            btnSer.Text = "搜尋";
+            btnSer.UseVisualStyleBackColor = true;
+            btnSer.Click += btnSer_Click;
             // 
             // palList
             // 
-            this.palList.AutoScroll = true;
-            this.palList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.palList.Controls.Add(this.labScoreList);
-            this.palList.Controls.Add(this.labformheader);
-            this.palList.Font = new System.Drawing.Font("新細明體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.palList.Location = new System.Drawing.Point(730, 24);
-            this.palList.Name = "palList";
-            this.palList.Size = new System.Drawing.Size(515, 316);
-            this.palList.TabIndex = 23;
+            palList.AutoScroll = true;
+            palList.BorderStyle = BorderStyle.Fixed3D;
+            palList.Controls.Add(labScoreList);
+            palList.Controls.Add(labformheader);
+            palList.Font = new Font("新細明體", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            palList.Location = new Point(730, 24);
+            palList.Name = "palList";
+            palList.Size = new Size(515, 316);
+            palList.TabIndex = 23;
             // 
             // labScoreList
             // 
-            this.labScoreList.AutoSize = true;
-            this.labScoreList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labScoreList.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labScoreList.Location = new System.Drawing.Point(3, 38);
-            this.labScoreList.Name = "labScoreList";
-            this.labScoreList.Size = new System.Drawing.Size(2, 18);
-            this.labScoreList.TabIndex = 27;
+            labScoreList.AutoSize = true;
+            labScoreList.BorderStyle = BorderStyle.FixedSingle;
+            labScoreList.Font = new Font("新細明體", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labScoreList.Location = new Point(3, 38);
+            labScoreList.Name = "labScoreList";
+            labScoreList.Size = new Size(2, 18);
+            labScoreList.TabIndex = 27;
             // 
             // labformheader
             // 
-            this.labformheader.AutoSize = true;
-            this.labformheader.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labformheader.Location = new System.Drawing.Point(3, 6);
-            this.labformheader.Name = "labformheader";
-            this.labformheader.Size = new System.Drawing.Size(506, 21);
-            this.labformheader.TabIndex = 26;
-            this.labformheader.Text = "   姓名     國文     英文     數學          總和        平均        最低        最高        ";
+            labformheader.AutoSize = true;
+            labformheader.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labformheader.Location = new Point(3, 6);
+            labformheader.Name = "labformheader";
+            labformheader.Size = new Size(506, 21);
+            labformheader.TabIndex = 26;
+            labformheader.Text = "   姓名     國文     英文     數學          總和        平均        最低        最高        ";
             // 
             // palShow
             // 
-            this.palShow.AutoScroll = true;
-            this.palShow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.palShow.Controls.Add(this.labShow);
-            this.palShow.Location = new System.Drawing.Point(174, 352);
-            this.palShow.Name = "palShow";
-            this.palShow.Size = new System.Drawing.Size(515, 214);
-            this.palShow.TabIndex = 25;
+            palShow.AutoScroll = true;
+            palShow.BorderStyle = BorderStyle.Fixed3D;
+            palShow.Controls.Add(labShow);
+            palShow.Location = new Point(174, 352);
+            palShow.Name = "palShow";
+            palShow.Size = new Size(515, 214);
+            palShow.TabIndex = 25;
             // 
             // labShow
             // 
-            this.labShow.AutoSize = true;
-            this.labShow.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labShow.Location = new System.Drawing.Point(3, 6);
-            this.labShow.Name = "labShow";
-            this.labShow.Size = new System.Drawing.Size(0, 20);
-            this.labShow.TabIndex = 28;
+            labShow.AutoSize = true;
+            labShow.Font = new Font("微軟正黑體", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labShow.Location = new Point(3, 6);
+            labShow.Name = "labShow";
+            labShow.Size = new Size(0, 20);
+            labShow.TabIndex = 28;
             // 
             // txtNum1
             // 
-            this.txtNum1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtNum1.Location = new System.Drawing.Point(22, 486);
-            this.txtNum1.Name = "txtNum1";
-            this.txtNum1.Size = new System.Drawing.Size(50, 29);
-            this.txtNum1.TabIndex = 26;
+            txtNum1.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtNum1.Location = new Point(22, 486);
+            txtNum1.Name = "txtNum1";
+            txtNum1.Size = new Size(50, 29);
+            txtNum1.TabIndex = 26;
             // 
             // txtNum2
             // 
-            this.txtNum2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtNum2.Location = new System.Drawing.Point(92, 486);
-            this.txtNum2.Name = "txtNum2";
-            this.txtNum2.Size = new System.Drawing.Size(50, 29);
-            this.txtNum2.TabIndex = 27;
+            txtNum2.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtNum2.Location = new Point(92, 486);
+            txtNum2.Name = "txtNum2";
+            txtNum2.Size = new Size(50, 29);
+            txtNum2.TabIndex = 27;
             // 
             // labSerCn
             // 
-            this.labSerCn.AutoSize = true;
-            this.labSerCn.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labSerCn.Location = new System.Drawing.Point(22, 462);
-            this.labSerCn.Name = "labSerCn";
-            this.labSerCn.Size = new System.Drawing.Size(106, 21);
-            this.labSerCn.TabIndex = 28;
-            this.labSerCn.Text = "國文分數範圍";
+            labSerCn.AutoSize = true;
+            labSerCn.Font = new Font("微軟正黑體", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labSerCn.Location = new Point(22, 462);
+            labSerCn.Name = "labSerCn";
+            labSerCn.Size = new Size(106, 21);
+            labSerCn.TabIndex = 28;
+            labSerCn.Text = "國文分數範圍";
             // 
             // List
             // 
-            this.List.BackColor = System.Drawing.SystemColors.Control;
-            this.List.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8});
-            this.List.Location = new System.Drawing.Point(174, 24);
-            this.List.Name = "List";
-            this.List.Size = new System.Drawing.Size(515, 321);
-            this.List.TabIndex = 29;
-            this.List.UseCompatibleStateImageBehavior = false;
-            this.List.View = System.Windows.Forms.View.Details;
+            List.BackColor = SystemColors.Control;
+            List.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6, columnHeader7, columnHeader8 });
+            List.Location = new Point(174, 24);
+            List.Name = "List";
+            List.Size = new Size(515, 321);
+            List.TabIndex = 29;
+            List.UseCompatibleStateImageBehavior = false;
+            List.View = View.Details;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "姓名";
+            columnHeader1.Text = "姓名";
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "國文";
+            columnHeader2.Text = "國文";
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "英文";
+            columnHeader3.Text = "英文";
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "數學";
+            columnHeader4.Text = "數學";
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "總和";
+            columnHeader5.Text = "總和";
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "平均";
+            columnHeader6.Text = "平均";
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "最低";
+            columnHeader7.Text = "最低";
             // 
             // columnHeader8
             // 
-            this.columnHeader8.Text = "最高";
+            columnHeader8.Text = "最高";
             // 
             // _05HwStudentScoreForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 610);
-            this.Controls.Add(this.List);
-            this.Controls.Add(this.labSerCn);
-            this.Controls.Add(this.txtNum2);
-            this.Controls.Add(this.txtNum1);
-            this.Controls.Add(this.palShow);
-            this.Controls.Add(this.palList);
-            this.Controls.Add(this.btnSer);
-            this.Controls.Add(this.btnRemove);
-            this.Controls.Add(this.btnIns);
-            this.Controls.Add(this.btnRandom20);
-            this.Controls.Add(this.btnrenew);
-            this.Controls.Add(this.btnRandom);
-            this.Controls.Add(this.btnShow);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.txtMath);
-            this.Controls.Add(this.txtEn);
-            this.Controls.Add(this.txtCn);
-            this.Controls.Add(this.labMath);
-            this.Controls.Add(this.labEn);
-            this.Controls.Add(this.labCn);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.labName);
-            this.Name = "_05HwStudentScoreForm";
-            this.Text = "_05HwStudentScoreForm";
-            this.palList.ResumeLayout(false);
-            this.palList.PerformLayout();
-            this.palShow.ResumeLayout(false);
-            this.palShow.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(702, 610);
+            Controls.Add(List);
+            Controls.Add(labSerCn);
+            Controls.Add(txtNum2);
+            Controls.Add(txtNum1);
+            Controls.Add(palShow);
+            Controls.Add(palList);
+            Controls.Add(btnSer);
+            Controls.Add(btnRemove);
+            Controls.Add(btnIns);
+            Controls.Add(btnRandom20);
+            Controls.Add(btnrenew);
+            Controls.Add(btnRandom);
+            Controls.Add(btnShow);
+            Controls.Add(btnAdd);
+            Controls.Add(txtMath);
+            Controls.Add(txtEn);
+            Controls.Add(txtCn);
+            Controls.Add(labMath);
+            Controls.Add(labEn);
+            Controls.Add(labCn);
+            Controls.Add(txtName);
+            Controls.Add(labName);
+            Name = "_05HwStudentScoreForm";
+            Text = "_05HwStudentScoreForm";
+            palList.ResumeLayout(false);
+            palList.PerformLayout();
+            palShow.ResumeLayout(false);
+            palShow.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
